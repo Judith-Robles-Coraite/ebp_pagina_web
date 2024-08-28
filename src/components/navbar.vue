@@ -162,7 +162,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import logo from '../assets/logo/logo.png'
+import logo from '../assets/logo/logo1.png'
 
 const navbar = ref(null)
 const isMenuOpen = ref(false)
