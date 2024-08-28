@@ -57,9 +57,9 @@
 </template>
 
 <script>
-import img1 from '../assets/carusel/img1.jpg'
-import img2 from '../assets/carusel/img2.jpg'
-import img3 from '../assets/carusel/img3.jpg'
+import img6 from '../assets/carusel/img6.jpg'
+import img5 from '../assets/carusel/img5.jpg'
+import img4 from '../assets/carusel/img4.jpg'
 
 export default {
   data() {
@@ -67,13 +67,13 @@ export default {
       currentSlide: 0,
       slides: [
         {
-          image: img3,
+          image: img4,
           cuadro: 'BIENVENIDOS',
           text: 'ESCUELA BOLIVIANA DE POSGRADO',
           textm: 'FORMACIÓN DE EXCELENCIA E INNOVACIÓN "EBP" TU MEJOR OPCIÓN '
         },
-        { image: img2, cuadro: 'BIENVENIDOS', text: 'TEXTO 2' },
-        { image: img1, cuadro: 'BIENVENIDOS', text: 'TEXTO 3' }
+        { image: img5, cuadro: 'BIENVENIDOS', text: 'TEXTO 2' },
+        { image: img6, cuadro: 'BIENVENIDOS', text: 'TEXTO 3' }
       ],
       interval: null
     }
