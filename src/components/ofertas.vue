@@ -28,99 +28,106 @@
 
   <!-- Sección ofertas académicas -->
 <div class="bg-white py-2 px-4 md:px-8 lg:px-20 mx-auto">
-  <h2 class="text-center text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-[#0A8B37]">OFERTAS ACADÉMICAS</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
-      <img :src="ofimg1" alt="Programa 1" class="w-full h-100 object-cover" />
+  <h2 class="text-center text-2xl md:text-3xl font-bold mb-6 md:mb-3 text-[#0A8B37]">OFERTAS ACADÉMICAS</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 row-gap-2 gap-x-6 justify-items-center">
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">  <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
     
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
       <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
-      <img :src="ofimg1" alt="Programa 1" class="w-full h-100 object-cover" />
-      <div class="flex justify-center p-4 mt-auto">
-        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
-        </button>
-      </div>
-    </div>
-
-    <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
       <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
-      <img :src="ofimg1" alt="Programa 1" class="w-full h-100 object-cover" />
-      <div class="flex justify-center p-4 mt-auto">
-        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
-        </button>
-      </div>
-    </div>
-
-    <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
       <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
-      <img :src="ofimg1" alt="Programa 1" class="w-full h-100 object-cover" />
-      <div class="flex justify-center p-4 mt-auto">
-        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
-        </button>
-      </div>
-    </div>
-
-    <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
       <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
-    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col">
-      <img :src="ofimg1" alt="Programa 1" class="w-full h-100 object-cover" />
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
+      <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
       <div class="flex justify-center p-4 mt-auto">
         <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
-          <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
         </button>
       </div>
     </div>
 
     <!-- Repetir la estructura anterior para otros cards -->
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
+      <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
+      <div class="flex justify-center p-4 mt-auto">
+        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+        </button>
+      </div>
+    </div>
+
+    <!-- Repetir la estructura anterior para otros cards -->
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
+      <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
+      <div class="flex justify-center p-4 mt-auto">
+        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+        </button>
+      </div>
+    </div>
+
+    <!-- Repetir la estructura anterior para otros cards -->
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
+      <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
+      <div class="flex justify-center p-4 mt-auto">
+        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+        </button>
+      </div>
+    </div>
+    <!-- Repetir la estructura anterior para otros cards -->
+    <!-- Repetir la estructura anterior para otros cards -->
+    <div class="bg-white shadow-md rounded overflow-hidden w-full max-w-sm flex flex-col transform scale-90 mb-0">
+      <img :src="ofimg2" alt="Programa 1" class="w-full h-100 object-cover" />
+      <div class="flex justify-center p-4 mt-auto">
+        <button class="flex items-center justify-center bg-green-600 text-white py-3 px-16 sm:py-2 sm:px-4 rounded-full text-lg sm:text-sm">
+              <font-awesome-icon :icon="['fab', 'whatsapp']" class="text-lg text-white mr-2" /> INSCRÍBETE AHORA
+        </button>
+      </div>
+    </div>
 
   </div>
 </div>

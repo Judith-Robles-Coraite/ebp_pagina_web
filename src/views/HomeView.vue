@@ -5,16 +5,20 @@
   </div>
   <!-- Nueva Sección para Programas Académicos -->
   <Ofertas/>
+  <!-- Nueva Sección para Nuestra plataforma academica -->
+  <Plataforma/>
 </template>
 
 <script>
 import Carusel from '../components/carusel.vue'
-import Ofertas from '../components/ofertas.vue' // Importa el componente Navbar
+import Ofertas from '../components/ofertas.vue'
+import Plataforma from '../components/plataforma.vue' // Importa el componente Navbar
 export default {
   name: 'App',
   components: {
     Carusel,
-    Ofertas
+    Ofertas,
+    Plataforma,
   }
 }
 </script>
