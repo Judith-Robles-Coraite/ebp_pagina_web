@@ -13,6 +13,10 @@ export default {
       fontFamily: {
       bebas: ['Bebas Neue', 'sans-serif'],
       helvetica: ['Helvetica', 'Arial', 'sans-serif'],
+    },
+  
+    colors: {
+      'mint-green': '#C8E6C9',
     },}
   },
   plugins: [require('flowbite/plugin'), require('tw-elements/plugin.cjs')],
