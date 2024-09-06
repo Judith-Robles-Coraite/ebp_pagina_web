@@ -1,29 +1,28 @@
-import './assets/main.css';
-import '../node_modules/flowbite-vue/dist/index.css';
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Añade aquí otros íconos que puedas necesitar
 
-import { Input, initTWE } from 'tw-elements';
-initTWE({ Input }, { allowReinits: true });
-
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-
-import App from './App.vue';
-import router from './router';
-
-// Importar Font Awesome
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faFacebookF, faInstagram, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-// Añadir los íconos a la librería
-library.add(faFacebookF, faInstagram, faTiktok, faWhatsapp);
-
+// Añadir íconos a la biblioteca
+library.add(
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+  faWhatsapp,
+  faArrowLeft,
+  faArrowRight
+);
+// Registrar el componente globalmente
 const app = createApp(App);
+app.component("font-awesome-icon", FontAwesomeIcon);
+app.mount("#app");
 
-app.use(createPinia());
-app.use(router);
 
-// Registrar el componente FontAwesomeIcon globalmente
-app.component('font-awesome-icon', FontAwesomeIcon);
-
-app.mount('#app');

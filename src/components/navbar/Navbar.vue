@@ -8,51 +8,16 @@
       <img :src="logo" class="w-12 h-auto" alt="EBP" />
     </div>
 
-    <!-- Menu Wrapper (solo en dispositivos grandes) -->
+    <!-- Menu  (solo en dispositivos grandes) -->
     <div
       class="hidden lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:flex lg:items-center lg:space-x-6"
     >
       <ul class="flex space-x-10 text-center">
-        <li>
+        <li v-for="(link, index) in linksMenu" :key="index">
           <a
             href="#"
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >INICIO</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >NOSOTROS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >NOTICIAS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >POSGRADOS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >SEDES</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px]"
-            >CONTACTANOS</a
+            >{{ link }}</a
           >
         </li>
       </ul>
@@ -92,7 +57,7 @@
   <div
     :class="{
       block: isMenuOpen,
-      hidden: !isMenuOpen
+      hidden: !isMenuOpen,
     }"
     class="fixed inset-0 bg-gradient-to-r from-[#203C61] to-[#0A8B37] bg-opacity-100 z-40 lg:hidden flex flex-col transition-opacity duration-300 ease-in-out"
   >
@@ -104,46 +69,11 @@
     <!-- Menu Links -->
     <div class="flex flex-col items-center justify-center flex-grow">
       <ul class="space-y-4 text-center text-white">
-        <li>
+        <li v-for="(link, index) in linksMenu" :key="index">
           <a
             href="#"
             class="text-sm text-white hover:scale-150 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >INICIO</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:scale-105 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >NOSOTROS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:scale-105 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >NOTICIAS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:scale-105 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >POSGRADOS</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:scale-105 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >SEDES</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-sm text-white hover:scale-105 hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] transition-all duration-300"
-            >CONTACTANOS</a
+            >{{ link }}</a
           >
         </li>
       </ul>
@@ -161,31 +91,39 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import logo from '../assets/logo/logo1.png'
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import logo from "../../assets/logo/logo1.png";
 
-const navbar = ref(null)
-const isMenuOpen = ref(false)
+const linksMenu = ref([
+  "INICIO",
+  "NOSOTROS",
+  "NOTICIAS",
+  "POSGRADOS",
+  "SEDES",
+  "CONTACTANOS",
+]);
+const navbar = ref(null);
+const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
+  isMenuOpen.value = !isMenuOpen.value;
+};
 
 const handleScroll = () => {
   if (window.scrollY > 50) {
-    navbar.value.classList.add('navbar-gradient')
+    navbar.value.classList.add("navbar-gradient");
   } else {
-    navbar.value.classList.remove('navbar-gradient')
+    navbar.value.classList.remove("navbar-gradient");
   }
-}
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
+  window.addEventListener("scroll", handleScroll);
+});
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style>
