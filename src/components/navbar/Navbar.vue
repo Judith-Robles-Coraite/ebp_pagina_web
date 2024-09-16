@@ -1,11 +1,11 @@
 <template>
   <nav
     ref="navbar"
-    class="fixed top-0 left-0 w-full bg-black bg-opacity-10 text-white p-4 z-50 flex items-center justify-between"
+    class="fixed top-0 left-0 w-full bg-black bg-opacity-10 text-white py-2 px-4 z-50 flex items-center justify-between"
   >
     <!-- Logo (visible en todas las versiones) -->
     <div class="flex items-center">
-      <img :src="logo" class="w-12 h-auto" alt="EBP" />
+      <img :src="logo" class="w-16 h-auto" alt="EBP" />
     </div>
 
     <!-- Menu  (solo en dispositivos grandes) -->
@@ -92,7 +92,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import logo from "../../assets/logo/logo1.png";
+import logo from "../../assets/logo/logo.svg";
 
 const linksMenu = ref([
   "INICIO",

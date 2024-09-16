@@ -1,6 +1,6 @@
 <template>
   <!-- Contenedor principal -->
- 
+
   <div
     class="flex flex-col lg:flex-row justify-between items-start lg:items-center bg-white px-10 md:px-8 lg:px-15 py-2 lg:py-2 mx-auto"
   >
@@ -26,11 +26,7 @@
         <span>{{ direction }} </span>
       </div>
 
-      <div
-        class="flex items-center space-x-2"
-        v-for="(item, index) in telephone"
-        :key="index"
-      >
+      <div class="flex items-center space-x-2" v-for="(item, index) in telephone" :key="index">
         <div
           class="flex items-center justify-center w-8 h-8 min-w-8 min-h-8 border border-[#0A8B37] rounded-full transition duration-300 hover:bg-[#0A8B37] group"
         >
@@ -49,11 +45,7 @@
         </div>
         <span>{{ item }}</span>
       </div>
-      <div
-        class="flex items-center space-x-2"
-        v-for="(item, index) in cellPhone"
-        :key="index"
-      >
+      <div class="flex items-center space-x-2" v-for="(item, index) in cellPhone" :key="index">
         <div
           class="flex items-center justify-center w-8 h-8 min-w-8 min-h-8 border border-[#0A8B37] rounded-full transition duration-300 hover:bg-[#0A8B37] group"
         >
@@ -86,65 +78,22 @@
       ></iframe>
     </div>
   </div>
-
+  <redessedes :facebook="facebook" :whatsapp="whatsapp" :instagram=" instagram" :tiktok="tiktok"></redessedes>
   <!-- Botones de Redes Sociales -->
-  <div class="flex justify-center items-center">
-    <!-- Botones de Redes Sociales -->
-    <div
-      class="social-buttons flex justify-center items-center p-2 bg-[#0A8B37] rounded-full w-auto h-10 space-x-2"
-    >
-      <a
-        v-if="socialMedia.includes('facebook')"
-        href="#"
-        class="group w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white hover:border-[#0A8B37]"
-      >
-        <font-awesome-icon
-          :icon="['fab', 'facebook-f']"
-          class="text-lg text-white group-hover:text-[#0A8B37]"
-        />
-      </a>
-      <a
-        v-if="socialMedia.includes('instagram')"
-        href="#"
-        class="group w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white hover:border-[#0A8B37]"
-      >
-        <font-awesome-icon
-          :icon="['fab', 'instagram']"
-          class="text-xl text-white group-hover:text-[#0A8B37]"
-        />
-      </a>
-      <a
-        v-if="socialMedia.includes('whatsapp')"
-        href="#"
-        class="group w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white hover:border-[#0A8B37]"
-      >
-        <font-awesome-icon
-          :icon="['fab', 'whatsapp']"
-          class="text-xl text-white group-hover:text-[#0A8B37]"
-        />
-      </a>
-      <a
-        v-if="socialMedia.includes('tiktok')"
-        href="#"
-        class="group w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white hover:border-[#0A8B37]"
-      >
-        <font-awesome-icon
-          :icon="['fab', 'tiktok']"
-          class="text-lg text-white group-hover:text-[#0A8B37]"
-        />
-      </a>
-    </div>
-  </div>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import redessedes from './Redessede.vue'
+import { defineProps } from 'vue'
 
 const props = defineProps({
   direction: String,
   mapLocation: String,
   telephone: Array,
   cellPhone: Array,
-  socialMedia: Array,
-});
+  facebook: Array,
+  whatsapp: Array,
+  instagram: Array,
+  tiktok: Array
+})
 </script>

@@ -1,0 +1,213 @@
+{
+    "carousels": [
+      {
+        "title": "Carrusel 1",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 1 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 1 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 2",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 2 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 2 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 3",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 3 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 3 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 4",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 4 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 4 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 5",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 5 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 5 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 6",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 6 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 6 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 7",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 7 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 7 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 8",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 8 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 8 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 9",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 9 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 9 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 10",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 10 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 10 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 11",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 11 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 11 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 12",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 12 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 12 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 13",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 13 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 13 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 14",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 14 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 14 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 15",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 15 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 15 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 16",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 16 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 16 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 17",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 17 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 17 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 18",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 18 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 18 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 19",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 19 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 19 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 20",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 20 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 20 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 21",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 21 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 21 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 22",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 22 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 22 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 23",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 23 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 23 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 24",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 24 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 24 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 25",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 25 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 25 - Imagen 2" }
+        ]
+      },
+      {
+        "title": "Carrusel 26",
+        "description": "Descripción para Carrusel 1",
+        "images": [
+          { "src": "src/assets/carusel/img6.jpg", "alt": "Carrusel 26 - Imagen 1" },
+          { "src": "src/assets/carusel/img5.jpg", "alt": "Carrusel 26 - Imagen 2" }
+        ]
+      }
+    ]
+    }
+    

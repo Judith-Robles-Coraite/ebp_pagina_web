@@ -122,12 +122,10 @@ const startAutoSlide = () => {
 };
 
 onMounted(() => {
-  console.log("Carrusel montado, iniciando intervalo");
   startAutoSlide();
 });
 
 onBeforeUnmount(() => {
-  console.log("Carrusel desmontado, limpiando intervalo");
   if (interval.value) {
     clearInterval(interval.value);
     interval.value = null;
