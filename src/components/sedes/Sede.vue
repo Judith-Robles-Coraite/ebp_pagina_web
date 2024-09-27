@@ -1,6 +1,5 @@
 <template>
   <!-- Contenedor principal -->
-
   <div
     class="flex flex-col lg:flex-row justify-between items-start lg:items-center bg-white px-10 md:px-8 lg:px-15 py-2 lg:py-2 mx-auto"
   >
@@ -84,7 +83,7 @@
 
 <script setup>
 import redessedes from './Redessede.vue'
-import { defineProps } from 'vue'
+
 
 const props = defineProps({
   direction: String,

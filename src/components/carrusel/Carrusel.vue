@@ -32,7 +32,8 @@
       class="absolute bottom-4 right-4 space-y-4 lg:top-1/2 lg:right-4 lg:bottom-auto lg:transform lg:-translate-y-1/2 lg:space-y-4"
     >
       <a
-        href="#"
+        href="https://www.facebook.com/people/Escuela-Boliviana-de-Posgrado-Sucre/100089375243421/"
+        target="_blank"
         class="group block w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white"
       >
         <font-awesome-icon
@@ -41,7 +42,8 @@
         />
       </a>
       <a
-        href="#"
+        href="https://www.instagram.com/ebpbolivia/"
+        target="_blank"
         class="group block w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white"
       >
         <font-awesome-icon
@@ -50,7 +52,8 @@
         />
       </a>
       <a
-        href="#"
+        href="https://www.tiktok.com/@escuelabolivianaposgrad0"
+        target="_blank"
         class="group block w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white"
       >
         <font-awesome-icon
@@ -59,7 +62,8 @@
         />
       </a>
       <a
-        href="#"
+        href="https://wa.link/116w6u"
+        target="_blank"
         class="group block w-8 h-8 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 hover:bg-white"
       >
         <font-awesome-icon
@@ -87,7 +91,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import img6 from "../../assets/carusel/img6.jpg";
-import img5 from "../../assets/carusel/img5.jpg";
+import img5 from "../../assets/carusel/img8.jpg";
 import img4 from "../../assets/carusel/img4.jpg";
 
 const currentSlide = ref(0);
@@ -100,8 +104,8 @@ const slides = [
     text: "ESCUELA BOLIVIANA DE POSGRADO",
     textm: 'FORMACIÓN DE EXCELENCIA E INNOVACIÓN "EBP" TU MEJOR OPCIÓN ',
   },
-  { index: 1, image: img5, cuadro: "BIENVENIDOS", text: "TEXTO 2" },
-  { index: 2, image: img6, cuadro: "BIENVENIDOS", text: "TEXTO 3" },
+  { index: 1, image: img5, cuadro: "MAESTRÍA EN:", text: "HEMATOLOGÍA Y HEMOTERAPIA", textm: 'TITULACIÓN OTORGADA POR  LA UNIVERSIDAD AUTÓNOMA DEL BENI "JOSE BALLIVIAN".   ', },
+  { index: 2, image: img6, cuadro: "MAESTRÍA EN:", text: "HEMATOLOGÍA Y HEMOTERAPIA", textm: 'TITULACIÓN OTORGADA POR  LA UNIVERSIDAD AUTÓNOMA DEL BENI "JOSE BALLIVIAN".   ', },
 ];
 
 const interval = ref(null);
@@ -118,7 +122,7 @@ const startAutoSlide = () => {
 
   interval.value = setInterval(() => {
     currentSlide.value = (currentSlide.value + 1) % slides.length;
-  }, 3000);
+  }, 7000);
 };
 
 onMounted(() => {

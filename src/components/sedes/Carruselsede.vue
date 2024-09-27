@@ -38,7 +38,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import redessedes from './Redessede.vue'
-import { defineProps } from 'vue'
+ 
 
 const props = defineProps({
   images: Array,

@@ -25,11 +25,14 @@
 
     <!-- Aula Virtual Button (solo en dispositivos grandes) -->
     <div class="hidden lg:flex items-center">
-      <button
-        class="bg-white text-black text-sm rounded-2xl border border-transparent px-3 py-1 hover:border-white hover:bg-transparent hover:text-white transition-all duration-300"
-      >
-        AULA VIRTUAL
-      </button>
+      <a 
+    href="https://aulavirtual.ebpbolivia.org.bo/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="bg-white text-black text-sm rounded-2xl border border-transparent px-3 py-1 hover:border-white hover:bg-transparent hover:text-white transition-all duration-300"
+  >
+    AULA VIRTUAL
+  </a>
     </div>
 
     <!-- Hamburguesa (aparece en pantallas menores a 768 px) -->

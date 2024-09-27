@@ -84,7 +84,7 @@
   
   <script setup>
   import redessedes from './Redessede.vue'
-  import { defineProps } from 'vue'
+ 
   
   const props = defineProps({
     direction: String,
