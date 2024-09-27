@@ -1,10 +1,6 @@
 <template>
   <div class="">
-    <svg
-      class="w-full h-full"
-      viewBox="280 0 1600 1770"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg class="w-full h-full" viewBox="280 0 1600 1770" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="mapGradient" x1="0%" y1="50%" x2="100%" y2="50%">
           <stop offset="0%" style="stop-color: #203c61; stop-opacity: 1" />
@@ -201,22 +197,22 @@
   </div>
 </template>
 <script setup>
-import {  defineEmits } from "vue";
+import { defineEmits } from 'vue'
 
-const props = defineProps(["selectedSede"]);
-const emit = defineEmits(["sedeSeleccionada"]);
+const props = defineProps(['selectedSede'])
+const emit = defineEmits(['sedeSeleccionada'])
 
 const emitSede = (sede) => {
-  emit("sedeSeleccionada", sede);
-};
+  emit('sedeSeleccionada', sede)
+}
 
 const esSedeActualSeleccionada = (sede) => {
-  return props.selectedSede === sede ? "#24FD97" : "url(#mapGradient)";
-};
+  return props.selectedSede === sede ? '#24FD97' : 'url(#mapGradient)'
+}
 
 const esSedeActualSeleccionadaIcon = (sede) => {
-  return props.selectedSede === sede ? "#ffffff" : "#24FD97";
-};
+  return props.selectedSede === sede ? '#ffffff' : '#24FD97'
+}
 </script>
 
 <style scoped>
