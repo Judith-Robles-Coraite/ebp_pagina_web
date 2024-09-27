@@ -40,7 +40,7 @@
   
   <script setup>
   import { ref, computed, onMounted } from 'vue';
-  import carrusel from './carrusel.vue';
+  import Carrusel from './Carrusel.vue';
   import AMACH from '../../assets/logos_convenios/AMACH.png';
   import CADEB from '../../assets/logos_convenios/CADEB.png';
   import CADEBB from '../../assets/logos_convenios/CADEBB.png';
