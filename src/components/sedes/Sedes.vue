@@ -141,6 +141,7 @@ import laboratoriosede from './Laboratoriosede.vue'
 import { ref } from 'vue'
 import Mapa from './Mapa.vue';
 
+
 /* info de las sedes ddd */
 const sedes = ref([
   {
