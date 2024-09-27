@@ -13,7 +13,7 @@
     >
       <!-- Mapa de Bolivia -->
       <div class="lg:w-1/3 flex justify-center">
-          <mapa :selectedSede="selectedSede" @sedeSeleccionada="updateFromMap" />
+          <Mapa :selectedSede="selectedSede" @sedeSeleccionada="updateFromMap" />
         </div>
 
         <!-- Reseña de Sedes -->
@@ -135,12 +135,12 @@
 
 <script setup>
 import Sede from './Sede.vue'
-import mapa from './Mapa.vue'
+import Mapa from './Mapa.vue'
 import carruselsede from './Carruselsede.vue'
 import laboratoriosede from './Laboratoriosede.vue'
 import { ref } from 'vue'
 
-/* info de las sedes */
+/* info de las sedes ddd */
 const sedes = ref([
   {
     nombre: 'lapaz',
