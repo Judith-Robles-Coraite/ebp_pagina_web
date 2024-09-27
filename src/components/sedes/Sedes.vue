@@ -13,7 +13,7 @@
     >
       <!-- Mapa de Bolivia -->
       <div class="lg:w-1/3 flex justify-center">
-        <Mapa :selectedSede="selectedSede" @sedeSeleccionada="updateFromMap" />
+        <MapaBolivia :selectedSede="selectedSede" @sedeSeleccionada="updateFromMap" />
       </div>
 
       <!-- Reseña de Sedes -->
@@ -139,7 +139,8 @@ import Sede from './Sede.vue'
 import carruselsede from './Carruselsede.vue'
 import laboratoriosede from './Laboratoriosede.vue'
 import { ref } from 'vue'
-import Mapa from './Mapa.vue';
+import MapaBolivia from './MapaBolivia.vue';
+
 
 
 /* info de las sedes ddd */
