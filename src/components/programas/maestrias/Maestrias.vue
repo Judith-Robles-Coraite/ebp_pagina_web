@@ -148,6 +148,9 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import diplomado_desarrollo from './Maestrias_desarrollo.vue'
 import diplomado_concluido from './Maestrias_concluido.vue'
 
+import img1 from '/src/assets/ofertas_academicas/doc1.jpg';
+import img2 from '/src/assets/ofertas_academicas/doc3.png';
+
 const showing = ref('')
 const currentProgramIndex = ref(0)
 const currentImage = ref('src/assets/ofertas_academicas/doc1.jpg')
@@ -156,8 +159,8 @@ const programs = [
   {
     title: 'Diplomado en Hematología y Hemoterapia',
     shortTitle: 'Hematología',
-    image1: 'src/assets/ofertas_academicas/doc1.jpg',
-    image2: 'src/assets/ofertas_academicas/doc3.png',
+    image1: img1,
+    image2: img2,
     description: 'Programa semipresencial con duración de 16 meses...',
     features: [
       {
@@ -194,8 +197,8 @@ const programs = [
   {
     title: 'Diplomado en Hematología y Hemoterapia',
     shortTitle: 'Hematología',
-    image1: 'src/assets/ofertas_academicas/doc2.jpg',
-    image2: 'src/assets/ofertas_academicas/doc3.png',
+    image1: img1,
+    image2: img2,
     description: 'Programa semipresencial con duración de 16 meses...',
     features: [
       {
