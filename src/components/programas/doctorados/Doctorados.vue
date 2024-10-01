@@ -153,7 +153,7 @@ import img2 from '/src/assets/ofertas_academicas/doc3.png';
 
 const showing = ref('')
 const currentProgramIndex = ref(0)
-const currentImage = ref('src/assets/ofertas_academicas/doc1.jpg')
+const currentImage = ref(img1)
 
 const programs = [
   {
