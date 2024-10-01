@@ -1,9 +1,9 @@
 <template>
   <!-- Navbar sección ofertas académicas -->
-  <div>
+  <div id="posgrados">
     <Navbarofertas :linksNavbarOfertas="linksNavbarOfertas" @change-section="changeSection" />
 
-    <div v-if="currentSection === 'Doctorados'">
+    <div v-if="currentSection === 'Doctorados'" id="doctorados-section" >
       <Doctorados />
     </div>
     <div v-else-if="currentSection === 'Maestrías'">

@@ -4,11 +4,8 @@
     <div class="container mx-auto">
       <!-- Navbar -->
       <nav class="w-full flex justify-center">
-        <ul
-          id="menu"
-          class="flex flex-wrap justify-center space-x-4 md:space-x-6 items-center text-center text-xs md:text-base"
-        >
-          <li v-for="(link, index) in linksNavbarOfertas" :key="index">
+        <ul id="menu" class="flex flex-wrap md:justify-center space-x-2 md:space-x-6 items-center text-center text-sm md:text-base">
+          <router-link to="#" v-for="(link, index) in linksNavbarOfertas" :key="index">
             <button 
               @click="setActive(index); $emit('change-section', link)" 
               :class="[ 
@@ -16,11 +13,11 @@
                   ? 'font-bold text-[#07872E] underline decoration-[#07872E] decoration-[5px] [text-underline-offset:14px]'
                   : 'text-[#0A8B37] hover:bg-[#f0f0f0] hover:font-bold'
               ]"
-              class="block pb-3 transition duration-100 px-4 py-4"
+              class="block md:pb-3 pb-3 transition duration-100 md:px-4 md:py-4 px-0 py-4"
             >
               {{ link }}
             </button>
-          </li>
+          </router-link>
         </ul>
       </nav>
 

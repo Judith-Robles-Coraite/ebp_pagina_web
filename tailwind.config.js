@@ -10,6 +10,8 @@ export default {
         bebas: ['Bebas Neue', 'sans-serif'],
         sans: ['Helvetica', 'Arial', 'sans-serif'],
       },
+        // Añadir utilidades personalizadas
+        scrollBehavior: ['responsive'],
     },
   },
   plugins: [],
