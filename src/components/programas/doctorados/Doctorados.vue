@@ -3,7 +3,7 @@
   <div class="relative">
     <div class="bg-white py-2 px-4 sm:px-2 md:px-8 lg:px-20 mx-auto">
       <h2 class="text-center text-2xl sm:text-xl md:text-3xl font-bold mb-2 md:mb-0 text-[#0A8B37]">
-        DIPLOMADOS EN OFERTA
+        DOCTORADOS EN OFERTA
       </h2>
     </div>
  <!-- Contenido de la tarjeta -->
