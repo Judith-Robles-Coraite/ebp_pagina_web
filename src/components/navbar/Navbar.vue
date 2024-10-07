@@ -14,15 +14,18 @@
     >
       <ul class="flex space-x-10 text-center">
         <li>
-          <a
-            href="#s"
+          <router-link 
+            to="/" 
+            href="#Carrusel"
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
-            >INICIO</a
+            @click="smoothScroll"
           >
-          <a
+            INICIO
+          </router-link>
+          <router-link to="/Nosotros"
             href="#"
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
-            >NOSOTROS</a
+            >NOSOTROS</router-link
           >
           <a
             href="#posgrados"
@@ -112,56 +115,80 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import logo from '../../assets/logo/logo.svg'
-//necesario para enviar la variable
 import { ofertasStore } from '../../util/eventCurrentOferta'
 
 const linksMenu = ref(['INICIO', 'NOSOTROS', 'NOTICIAS', 'POSGRADOS', 'SEDES', 'CONTACTANOS'])
-
 const isMenuOpen = ref(false)
 const navbar = ref(null)
+const route = useRoute() // Para obtener la ruta actual
+const router = useRouter() // Para acceder al enrutador
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-const handleScroll = () => {
-  if (window.scrollY > 50) {
-    navbar.value.classList.add('navbar-gradient')
-  } else {
+// Función para aplicar gradiente en rutas específicas
+const applyNavbarStyle = () => {
+  if (route.path === '/') {
+    // Si estamos en la ruta de Inicio, el navbar será transparente
     navbar.value.classList.remove('navbar-gradient')
+  } else {
+    // En cualquier otra ruta (Nosotros, Posgrados, etc.), aplicar el gradiente
+    navbar.value.classList.add('navbar-gradient')
   }
 }
 
+const handleScroll = () => {
+  // Mantiene el gradiente si la página es diferente de "Inicio"
+  if (window.scrollY > 50) {
+    navbar.value.classList.add('navbar-gradient')
+  } else {
+    if (route.path === '/') {
+      // Si la ruta es "Inicio", queremos mantener el navbar transparente
+      navbar.value.classList.remove('navbar-gradient')
+    }
+  }
+}
+
+// Función para desplazamiento suave
 const smoothScroll = (event) => {
-  event.preventDefault() // Evitar el comportamiento predeterminado del ancla
+  event.preventDefault()
 
   const targetId = event.currentTarget.getAttribute('href')
   const target = document.querySelector(targetId)
-  const offset = navbar.value.offsetHeight // Obtener la altura del navbar dinámicamente
+  const offset = navbar.value.offsetHeight
 
-  // Desplazarse a la sección tomando en cuenta la altura del navbar
   window.scrollTo({
     top: target.offsetTop - offset,
-    behavior: 'smooth' // Desplazamiento suave
+    behavior: 'smooth'
   })
 }
 
+// Lógica para verificar la ruta activa al montar el componente
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 
-  // Agregar evento de clic a los enlaces
+  // Verificar si estamos en la ruta correcta al montar
+  applyNavbarStyle()
+
+  // Agregar eventos de clic para el desplazamiento suave
   const anchors = document.querySelectorAll('a[href^="#"]')
   anchors.forEach((anchor) => {
     anchor.addEventListener('click', smoothScroll)
   })
 })
 
+// Observa los cambios de ruta y aplica el estilo del navbar
+watch(route, () => {
+  applyNavbarStyle()
+})
+
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
 
-  // Limpiar los eventos de clic
   const anchors = document.querySelectorAll('a[href^="#"]')
   anchors.forEach((anchor) => {
     anchor.removeEventListener('click', smoothScroll)
@@ -171,9 +198,10 @@ onBeforeUnmount(() => {
 const seleccionarOfertas = (seccion) => {
   ofertasStore.setOfertas(seccion)
 }
-
-
 </script>
+
+
+
 
 <style>
 .navbar-gradient {

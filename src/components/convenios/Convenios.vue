@@ -99,7 +99,7 @@
     { src: SIBO, alt: 'Imagen 26' },
     ]);
 
-    const carousels = ref(carouselsData.carousels); // Asignar datos directamente del JSON
+const carousels = ref(carouselsData.carousels); // Asignar datos directamente del JSON
 const selectedCarousel = ref(null);
 const isModalOpen = ref(false);
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-screen w-full overflow-hidden">
+  <div id="Carrusel" class="relative h-screen w-full overflow-hidden">
     <div
       class="flex transition-transform duration-700"
       :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
