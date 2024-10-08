@@ -3,6 +3,10 @@ import { reactive } from 'vue'
 export const ofertasStore = reactive({
   ofertas: '',
   setOfertas(seccion) {
-    this.ofertas = seccion
+    if (this.ofertas === seccion) {
+      return (this.ofertas = 'reasignar')
+    } else {
+      return (this.ofertas = seccion)
+    }
   }
 })

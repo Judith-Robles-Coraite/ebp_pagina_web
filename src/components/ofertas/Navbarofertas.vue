@@ -2,7 +2,6 @@
   <!-- Navbar sección ofertas académicas -->
   <div class="bg-white py-0 px-4 md:px-8 lg:px-20">
     <div class="container mx-auto">
-      
       <!-- Navbar -->
       <nav class="w-full flex justify-center">
         <ul
@@ -42,19 +41,25 @@ import { ofertasStore } from '../../util/eventCurrentOferta'
 
 const seccionSeleccionada = computed(() => ofertasStore.ofertas)
 
-// Estado reactivo para el enlace activo, sin enlace activo al inicio
-const activeLink = ref(null)
+const linksNavbarOfertas =  ['Doctorados', 'Maestrías', 'Especialidades', 'Diplomados']
+
+const calcularIndiceArray =(array, value) =>{
+  return array.indexOf(value)
+}
+// activeLink es indice (0,1,etc) Estado reactivo para el enlace activo, sin enlace activo al inicio  
+const activeLink = ref(seccionSeleccionada.value === 'Doctorados' || seccionSeleccionada.value === 'reasignar' ? calcularIndiceArray(linksNavbarOfertas,'Doctorados') : null);
 
 // Función para establecer el enlace activo
 const setActive = (index) => {
   activeLink.value = index
 }
-const linksNavbarOfertas =  ['Doctorados', 'Maestrías', 'Especialidades', 'Diplomados']
+
 
 //se ejecuta cuando seccionSeleccionada cambia de valor, en base a eso establecemos la posicion que queremos
 watch(seccionSeleccionada, (newSection) => {
-  const posicion = linksNavbarOfertas.indexOf(newSection)
-  activeLink.value = posicion
+  let seccionPorDefecto = 'Doctorados'
+  //const posicion = linksNavbarOfertas.indexOf(seccionPorDefecto)
+  activeLink.value = calcularIndiceArray(linksNavbarOfertas,seccionPorDefecto)
 })
 
 </script>

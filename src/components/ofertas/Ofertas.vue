@@ -59,16 +59,15 @@ import { computed, watch } from 'vue'
 
 //para recibir el valor desde el navbar
 const seccionSeleccionada = computed(() => ofertasStore.ofertas)
-
-const currentSection = ref(null) // Componente por defecto
+const currentSection = ref(seccionSeleccionada.value === 'Doctorados' || seccionSeleccionada.value === 'reasignar' ? 'Doctorados' : null);
 
 const changeSection = (section) => {
   currentSection.value = section
 }
-
 //se ejecuta cuando seccionSeleccionada cambia de valor
 watch(seccionSeleccionada, (newSection) => {
-  changeSection(newSection)
+  let seccionPorDefecto = 'Doctorados'
+  changeSection(seccionPorDefecto)
 })
 
 const images = ref([ofimg1, ofimg2, ofimg1, ofimg2, ofimg1, ofimg2, ofimg1, ofimg2, ofimg1, ofimg2])

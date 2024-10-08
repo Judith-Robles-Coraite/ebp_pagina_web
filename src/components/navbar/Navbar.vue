@@ -23,16 +23,17 @@
             INICIO
           </router-link>
           <router-link to="/Nosotros"
-            href="#"
+            
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
             >NOSOTROS</router-link
           >
-          <a
-            href="#posgrados"
+          <router-link
+            :to="{ path: '/', hash: '#posgrados' }"
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
             @click="seleccionarOfertas('Doctorados')"
-            >POSGRADOS</a
           >
+            POSGRADOS
+          </router-link>
           <a
             href="#sedes"
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
@@ -197,6 +198,7 @@ onBeforeUnmount(() => {
 
 const seleccionarOfertas = (seccion) => {
   ofertasStore.setOfertas(seccion)
+  console.log(ofertasStore.ofertas);
 }
 </script>
 
