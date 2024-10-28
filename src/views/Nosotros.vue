@@ -4,6 +4,7 @@ import Nosotros from "../components/nosotros/nosotros.vue";
 
 <template>
   <Nosotros/>
+  
 </template>
 
 <style scoped></style>

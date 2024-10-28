@@ -1,6 +1,8 @@
 <template>
-  <div id="sedes" class="bg-white px-5 md:px-8 lg:px-10 py-2 lg:py-4 mx-auto">
-    <div class="w-full text-center mb-0">
+  <div id="sedes" > 
+    <div class="mt-[-100px] h-[80px]"></div> <!-- Invisible, empuja el contenido -->
+    <div class=" bg-white px-5 md:px-8 lg:px-10 py-2 lg:py-4 mx-auto">
+      <div class="w-full text-center mb-0">
       <h2 class="text-xl md:text-3xl font-bold text-[#0A8B37] mt-2 md:mt-4">NUESTRAS SEDES</h2>
       <p class="text-gray-700 mt-2 sm:mt-4 px-0 sm:px-12 md:px-36">
         Contamos con múltiples sedes a nivel nacional, estratégicamente ubicadas para ofrecerte
@@ -130,6 +132,7 @@
         </div>
       </div>
     </div>
+  </div> 
   </div>
 </template>
 

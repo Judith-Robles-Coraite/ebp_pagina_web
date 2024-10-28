@@ -4,7 +4,6 @@ import Ofertas from "../components/ofertas/Ofertas.vue";
 import Plataforma from "../components/plataforma/Plataforma.vue";
 import Sedes from "../components/sedes/Sedes.vue";
 import Convenios from "../components/convenios/Convenios.vue";
-import Piepagina from "../components/piepagina/Piepagina.vue";
 </script>
 
 <template>
@@ -13,6 +12,5 @@ import Piepagina from "../components/piepagina/Piepagina.vue";
     <Plataforma />
     <Sedes />
     <Convenios />
-    <Piepagina />
 </template>
 <style scoped></style>

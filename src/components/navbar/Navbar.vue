@@ -1,7 +1,7 @@
 <template>
   <nav
     ref="navbar"
-    class="fixed top-0 left-0 w-full bg-black bg-opacity-10 text-white py-2 px-4 z-50 flex items-center justify-between"
+    class="fixed top-0 left-0 w-full bg-black bg-opacity-20 text-white py-2 px-4 z-50 flex items-center justify-between"
   >
     <!-- Logo (visible en todas las versiones) -->
     <div class="flex items-center">
@@ -34,15 +34,19 @@
           >
             POSGRADOS
           </router-link>
-          <a
-            href="#sedes"
+          <router-link to="/Noticias"
+            
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
-            >SEDES</a
+            >NOTICIAS</router-link
           >
-          <a
-            href="#"
+          <router-link
+            :to="{ path: '/', hash: '#sedes' }"
+            class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4">
+            SEDES</router-link>
+          <router-link to="/Contactanos"
+            
             class="text-sm text-white hover:underline hover:decoration-white hover:decoration-[1.5px] hover:[text-underline-offset:6px] px-4"
-            >CONTACTANOS</a
+            >CONTACTANOS</router-link
           >
         </li>
       </ul>
@@ -124,8 +128,8 @@ import { ofertasStore } from '../../util/eventCurrentOferta'
 const linksMenu = ref(['INICIO', 'NOSOTROS', 'NOTICIAS', 'POSGRADOS', 'SEDES', 'CONTACTANOS'])
 const isMenuOpen = ref(false)
 const navbar = ref(null)
-const route = useRoute() // Para obtener la ruta actual
-const router = useRouter() // Para acceder al enrutador
+const route = useRoute()
+const router = useRouter()
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -134,27 +138,23 @@ const toggleMenu = () => {
 // Función para aplicar gradiente en rutas específicas
 const applyNavbarStyle = () => {
   if (route.path === '/') {
-    // Si estamos en la ruta de Inicio, el navbar será transparente
     navbar.value.classList.remove('navbar-gradient')
   } else {
-    // En cualquier otra ruta (Nosotros, Posgrados, etc.), aplicar el gradiente
     navbar.value.classList.add('navbar-gradient')
   }
 }
 
 const handleScroll = () => {
-  // Mantiene el gradiente si la página es diferente de "Inicio"
   if (window.scrollY > 50) {
     navbar.value.classList.add('navbar-gradient')
   } else {
     if (route.path === '/') {
-      // Si la ruta es "Inicio", queremos mantener el navbar transparente
       navbar.value.classList.remove('navbar-gradient')
     }
   }
 }
 
-// Función para desplazamiento suave
+// Función para desplazamiento suave dentro de la misma página
 const smoothScroll = (event) => {
   event.preventDefault()
 
@@ -168,21 +168,17 @@ const smoothScroll = (event) => {
   })
 }
 
-// Lógica para verificar la ruta activa al montar el componente
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 
-  // Verificar si estamos en la ruta correcta al montar
   applyNavbarStyle()
 
-  // Agregar eventos de clic para el desplazamiento suave
   const anchors = document.querySelectorAll('a[href^="#"]')
   anchors.forEach((anchor) => {
     anchor.addEventListener('click', smoothScroll)
   })
 })
 
-// Observa los cambios de ruta y aplica el estilo del navbar
 watch(route, () => {
   applyNavbarStyle()
 })
@@ -200,6 +196,7 @@ const seleccionarOfertas = (seccion) => {
   ofertasStore.setOfertas(seccion)
   console.log(ofertasStore.ofertas);
 }
+
 </script>
 
 

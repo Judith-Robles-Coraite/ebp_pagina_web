@@ -27,3 +27,4 @@ const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.use(router); // Asegúrate de usar el router
 app.mount("#app");
+

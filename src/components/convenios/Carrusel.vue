@@ -11,7 +11,7 @@
         <img :src="props.images[currentImageIndex].src" :alt="props.images[currentImageIndex].alt" class="w-full h-full object-contain rounded-2xl" />
         <button @click="nextSlide" class="absolute right-2 w-8 h-8 md:w-10 md:h-10 top-1/2 bg-black bg-opacity-10 rounded-full text-white flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed">
-            <path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/>
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
           </svg>
         </button>
 

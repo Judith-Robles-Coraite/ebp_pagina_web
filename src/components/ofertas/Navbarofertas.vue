@@ -1,6 +1,7 @@
 <template>
   <!-- Navbar sección ofertas académicas -->
   <div class="bg-white py-0 px-4 md:px-8 lg:px-20">
+    <div class="pt-[72px] -mt-[72px] bg-gray-100"></div> <!-- Padding oculto para que el navbar no tape el contenido-->
     <div class="container mx-auto">
       <!-- Navbar -->
       <nav class="w-full flex justify-center">

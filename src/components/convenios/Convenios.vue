@@ -2,10 +2,9 @@
     <div class="bg-white px-5 md:px-8 lg:px-10 py-2 lg:py-4 mx-auto">
       <!-- Título y descripción -->
       <div class="w-full text-center mb-0">
-        <h2 class="text-xl md:text-3xl font-bold text-[#0A8B37] mt-2 md:mt-4">NUESTROS CONVENIOS</h2>
+        <h2 class="text-xl md:text-3xl font-bold text-[#0A8B37] mt-2 md:mt-4"> CONVENIOS</h2>
         <p class="hidden sm:block text-gray-700 mt-2 sm:mt-4 px-0 sm:px-12 md:px-36">
-          En la Escuela Boliviana de Posgrado, establecemos alianzas estratégicas con instituciones y empresas líderes a nivel nacional. Estos convenios nos permiten brindar servicios de alta calidad, acceso a recursos de vanguardia y colaborar en proyectos innovadores que benefician a nuestra comunidad educativa.
-        </p>
+          En la Escuela Boliviana de Posgrado, se establecen alianzas estratégicas con instituciones y empresas líderes a nivel nacional. Estos convenios permiten brindar servicios de alta calidad, acceso a recursos de vanguardia y colaborar en proyectos innovadores que benefician a la comunidad educativa.        </p>
       </div>
     </div>
   
